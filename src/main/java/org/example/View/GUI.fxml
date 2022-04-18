@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0"
+      prefWidth="910.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.Controller.Controller">
+    <children>
+        <TextField fx:id="runningTime" layoutX="117.0" layoutY="35.0" onAction="#handleEvents"
+                   promptText="Insert running Time"/>
+        <Button fx:id="startSimulation" layoutX="14.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleEvents"
+                prefHeight="25.0" prefWidth="252.0" text="Start Simulation"/>
+        <Label fx:id="runningTimeLabel" layoutX="14.0" layoutY="39.0" prefHeight="17.0" prefWidth="91.0"
+               text="Running Time"/>
+        <TextField fx:id="noOfQueues" layoutX="117.0" layoutY="86.0" onAction="#handleEvents"
+                   promptText="Insert no of queues"/>
+        <Label fx:id="queuesLabel" layoutX="14.0" layoutY="90.0" prefHeight="17.0" prefWidth="91.0"
+               text="No of Queues"/>
+        <Label fx:id="clientsLabel" layoutX="14.0" layoutY="126.0" prefHeight="17.0" prefWidth="91.0"
+               text="No of Clients"/>
+        <TextField fx:id="noOfClients" layoutX="117.0" layoutY="122.0" onAction="#handleEvents"
+                   promptText="Insert no of clients"/>
+        <Label fx:id="minArrivalLabel" layoutX="15.0" layoutY="177.0" prefHeight="17.0" prefWidth="91.0"
+               text="Min arrival Time"/>
+        <TextField fx:id="minArrivalTime" layoutX="117.0" layoutY="173.0" onAction="#handleEvents" prefHeight="25.0"
+                   prefWidth="149.0" promptText="Insert min arrival time"/>
+        <Label fx:id="maxArrivalLabel" layoutX="14.0" layoutY="213.0" prefHeight="17.0" prefWidth="91.0"
+               text="Max arrival Time"/>
+        <TextField fx:id="maxArrivalTime" layoutX="117.0" layoutY="209.0" onAction="#handleEvents"
+                   promptText="Insert max arrival time"/>
+        <Label fx:id="minServiceLabel" layoutX="14.0" layoutY="267.0" prefHeight="17.0" prefWidth="91.0"
+               text="Min service Time"/>
+        <TextField fx:id="minServiceTime" layoutX="117.0" layoutY="263.0" onAction="#handleEvents"
+                   promptText="Insert min service time"/>
+        <Label fx:id="maxServiceLabel" layoutX="12.0" layoutY="305.0" prefHeight="17.0" prefWidth="91.0"
+               text="Max service Time"/>
+        <TextField fx:id="maxServiceTime" layoutX="117.0" layoutY="301.0" onAction="#handleEvents"
+                   promptText="Insert max service time"/>
+        <TextArea fx:id="textArea" layoutX="334.0" layoutY="14.0" prefHeight="608.0" prefWidth="572.0"/>
+    </children>
+</Pane>
